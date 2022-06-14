@@ -576,7 +576,7 @@ export interface _ServiceInfo {
 
 export interface DeleteEvmTokenParams {
   smartContract: string,
-  chain: 'astarEvm' | 'moonbeam' | 'moonriver' | 'moonbase' | 'shidenEvm',
+  chain: 'edgEvm' | 'moonbeam' | 'moonriver' | 'moonbase' | 'shidenEvm',
   type: 'erc20' | 'erc721'
 }
 
