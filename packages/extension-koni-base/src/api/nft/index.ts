@@ -104,7 +104,7 @@ export class NftHandler {
 
     for (const handler of this.handlers) {
       if (handler instanceof Web3NftApi && handler.chain === 'edgEvm') {
-        handler.setEvmContracts(this.evmContracts.astarEvm);
+        handler.setEvmContracts(this.evmContracts.edgEvm);
       } else if (handler instanceof Web3NftApi && handler.chain === 'moonbeam') {
         handler.setEvmContracts(this.evmContracts.moonbeam);
       } else if (handler instanceof Web3NftApi && handler.chain === 'moonriver') {
