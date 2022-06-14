@@ -46,7 +46,7 @@ function createNftApi (chain: string, api: ApiProps | null, addresses: string[])
       return new Web3NftApi(useAddresses, chain);
     case SUPPORTED_NFT_NETWORKS.moonbase:
       return new Web3NftApi(useAddresses, chain);
-    case SUPPORTED_NFT_NETWORKS.astarEvm:
+    case SUPPORTED_NFT_NETWORKS.edgEvm:
       return new Web3NftApi(useAddresses, chain);
   }
 
@@ -91,7 +91,7 @@ export class NftHandler {
 
   private setEvmContracts (evmContracts: CustomEvmToken[]) {
     this.evmContracts = {
-      astarEvm: [],
+      edgEvm: [],
       moonbase: [],
       moonbeam: [],
       moonriver: [],
@@ -103,7 +103,7 @@ export class NftHandler {
     }
 
     for (const handler of this.handlers) {
-      if (handler instanceof Web3NftApi && handler.chain === 'astarEvm') {
+      if (handler instanceof Web3NftApi && handler.chain === 'edgEvm') {
         handler.setEvmContracts(this.evmContracts.astarEvm);
       } else if (handler instanceof Web3NftApi && handler.chain === 'moonbeam') {
         handler.setEvmContracts(this.evmContracts.moonbeam);
