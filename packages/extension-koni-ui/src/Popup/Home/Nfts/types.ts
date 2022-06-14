@@ -63,7 +63,7 @@ export enum SUPPORTED_TRANSFER_CHAIN_NAME {
   bitcountry = 'bitcountry',
   moonbeam = 'moonbeam',
   moonbase = 'moonbase',
-  astarEvm = 'astarEvm',
+  edgEvm = 'edgEvm',
   moonriver = 'moonriver',
   shiden = 'shiden',
   shibuya = 'shibuya'
@@ -85,7 +85,7 @@ export const SUPPORTED_TRANSFER_EVM_CHAIN = [
   SUPPORTED_TRANSFER_CHAIN_NAME.moonbase as string,
   SUPPORTED_TRANSFER_CHAIN_NAME.moonbeam as string,
   SUPPORTED_TRANSFER_CHAIN_NAME.moonriver as string,
-  SUPPORTED_TRANSFER_CHAIN_NAME.astarEvm as string,
+  SUPPORTED_TRANSFER_CHAIN_NAME.edgEvm as string,
   SUPPORTED_TRANSFER_CHAIN_NAME.shiden as string,
   SUPPORTED_TRANSFER_CHAIN_NAME.shibuya as string
 ];
