@@ -18,8 +18,8 @@ interface Props extends ThemeProps {
 
 const CHAIN_OPTIONS = [
   {
-    text: 'Astar',
-    value: 'astarEvm'
+    text: 'Edgeware',
+    value: 'edgEvm'
   },
   {
     text: 'Moonbeam',
