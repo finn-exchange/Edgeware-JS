@@ -59,7 +59,7 @@ export class NftHandler {
   addresses: string[] = [];
   total = 0;
   evmContracts: EvmContracts = {
-    astarEvm: [],
+    edgEvm: [],
     moonbase: [],
     moonbeam: [],
     moonriver: [],
