@@ -559,7 +559,7 @@ export interface CustomEvmToken {
   smartContract: string,
   symbol?: string,
   decimals?: number,
-  chain: 'astarEvm' | 'moonbeam' | 'moonriver' | 'moonbase' | 'shidenEvm',
+  chain: 'edgEvm' | 'moonbeam' | 'moonriver' | 'moonbase' | 'shidenEvm',
   type: 'erc20' | 'erc721'
 }
 
@@ -582,7 +582,7 @@ export interface DeleteEvmTokenParams {
 
 export interface ValidateEvmTokenRequest {
   smartContract: string,
-  chain: 'astarEvm' | 'moonbeam' | 'moonriver' | 'moonbase' | 'shidenEvm',
+  chain: 'edgEvm' | 'moonbeam' | 'moonriver' | 'moonbase' | 'shidenEvm',
   type: 'erc20' | 'erc721'
 }
 
