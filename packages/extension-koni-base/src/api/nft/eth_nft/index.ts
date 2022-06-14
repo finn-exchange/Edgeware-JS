@@ -22,7 +22,7 @@ export class Web3NftApi extends BaseNftApi {
   }
 
   connectWeb3 () {
-    if (this.chain === SUPPORTED_NFT_NETWORKS.astarEvm) {
+    if (this.chain === SUPPORTED_NFT_NETWORKS.edgEvm) {
       this.web3 = new Web3(new Web3.providers.WebsocketProvider(NETWORKS.astar.provider));
     } else {
       this.web3 = new Web3(new Web3.providers.WebsocketProvider(EVM_NETWORKS[this.chain as string].provider));
