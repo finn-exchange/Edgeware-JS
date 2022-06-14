@@ -161,7 +161,7 @@ export default async function transferHandler (api: ApiPromise, networkKey: stri
       return await web3TransferHandler(networkKey, senderAddress, recipientAddress, params);
     case SUPPORTED_TRANSFER_CHAIN_NAME.moonriver:
       return await web3TransferHandler(networkKey, senderAddress, recipientAddress, params);
-    case SUPPORTED_TRANSFER_CHAIN_NAME.astarEvm:
+    case SUPPORTED_TRANSFER_CHAIN_NAME.edgEvm:
       return await web3TransferHandler(networkKey, senderAddress, recipientAddress, params);
     case SUPPORTED_TRANSFER_CHAIN_NAME.bitcountry:
       return await acalaTransferHandler(api, senderAddress, recipientAddress, params);
